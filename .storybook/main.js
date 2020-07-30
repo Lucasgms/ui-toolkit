@@ -3,6 +3,7 @@ module.exports = {
     '../src/**/*.stories.([tj]s|mdx)',
   ],
   addons: [
+    'storybook-addon-themes',
     '@storybook/addon-knobs/register',
     '@storybook/addon-a11y/register',
     '@storybook/addon-viewport/register',

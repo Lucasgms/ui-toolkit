@@ -1,9 +1,7 @@
 const $darkBlue = 'rgb(0, 40, 104)';
 const $lightGreenBlue = 'rgb(4, 247, 247)';
 const $lightNeutral = 'rgb(244, 247, 251)';
-// const $neutral = 'rgb(208, 221, 234)';
 const $darkNeutral = 'rgb(48, 69, 92)';
-const $mediumNeutral = 'rgb(123, 146, 171)';
 
 const $transparent = 'transparent';
 const $white = 'rgb(255, 255, 255)';
@@ -31,11 +29,11 @@ export const theme = {
 
   // Text colors
   textColor: $darkNeutral,
-  textInverseColor: $white,
+  textInverseColor: $darkBlue,
 
   // Toolbar default and active colors
-  barTextColor: $mediumNeutral,
-  barSelectedColor: $white,
+  barTextColor: $white,
+  barSelectedColor: $lightGreenBlue,
   barBg: $colorPrimary,
 
   // Form colors

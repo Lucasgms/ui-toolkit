@@ -1,0 +1,31 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Button from './Button.vue'
+
+<Meta title="Components|Buttons" component={Button} />
+
+# Button
+
+Buttons allow users to make some actions. You can add a `href` attr to use it as `<a>` element.
+
+## Variants
+
+### Filled buttons
+
+<Preview>
+  <Story name="Filled" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div class="row-items">
+          <Button :isLoading="isLoading">Default</Button>
+          <Button :isLoading="isLoading" color="primary">Primary</Button>
+          <Button :isLoading="isLoading" color="secondary">Secondary</Button>
+          <Button :isLoading="isLoading" disabled>Disabled</Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+

@@ -29,8 +29,8 @@
 }
 
 .row-items > * {
-  margin-right: var(--space-sm) !important;
   margin-bottom: var(--space-sm) !important;
+  margin-right: var(--space-sm) !important;
 }
 
 .sm-offset-left {

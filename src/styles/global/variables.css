@@ -1,0 +1,123 @@
+:root {
+  /* ------------------------------------*\
+    #VARIAVEIS-ESPACAMENTO
+  \*------------------------------------ */
+  --space-xxs: 12px;
+  --space-xs: 16px;
+  --space-sm: 20px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 40px;
+  --space-xlg: 48px;
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-BREAKPOINTS
+  \*------------------------------------ */
+  --screen-xs: 576px;
+  --screen-sm: 768px;
+  --screen-md: 992px;
+  --screen-lg: 1200px;
+  --screen-xlg: 1440px;
+  --screen-max-container: 1140px;
+  --screen-gutter-width: 16px;
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-FONT-TYPES
+  \*------------------------------------ */
+  --font-family: 'Lato', 'Roboto', sans-serif;
+  --typography-panel-font: 700 48px/58px var(--font-family);
+  --typography-title-font: 700 36px/43px var(--font-family);
+  --typography-subheader-font: 700 24px/29px var(--font-family);
+  --typography-body-font: 400 16px/28px var(--font-family);
+  --typography-body2-font: 400 14px/28px var(--font-family);
+  --typography-button-font: 700 16px/19px var(--font-family);
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-CORES_BASE
+  \*------------------------------------ */
+  --white: #fff;
+  --red: #de2d2d;
+  --light-red: #ffa7a7;
+  --green: #30a64a;
+  --light-green: #a7f4c6;
+  --light-yellow: #ffe2a3;
+  --light-blue: #d9e8f8;
+  --medium-blue: #1b53ad;
+  --dark-blue: #002868;
+  --tech-blue: #04f7f7;
+  --dark-gray: #30455c;
+  --dark-tech-blue: #00e0e0;
+  --light-gray: #5f748b;
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-CORES_APLICACADAS
+  \*------------------------------------ */
+  --primary-color: var(--medium-blue);
+  --primary-color-lighten: var(--dark-blue);
+  --primary-color-contrast: var(--white);
+  --secondary-color: var(--tech-blue);
+  --seconday-color-lighten: var(--dark-tech-blue);
+  --secondary-color-contrast: var(--dark-blue);
+  --info-color: var(--medium-blue);
+  --info-color-lighteen: var(--light-blue);
+  --info-color-constrast: var(--dark-gray);
+  --success-color: var(--green);
+  --success-color-lighten: var(--light-green);
+  --success-color-contrast: var(--dark-gray);
+  --danger-color: var(--red);
+  --danger-color-lighten: var(--light-red);
+  --danger-color-constrast: var(--dark-gray);
+  --warning-color-lighten: var(--light-yellow);
+  --warning-color-constrast: var(--dark-gray);
+  --text-color: var(--dark-gray);
+  --text-color-lighten: var(--light-gray);
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-BORDAS
+  \*------------------------------------ */
+  --border-radius: 4px;
+
+
+
+
+
+  /* ------------------------------------*\
+    #VARIAVEIS-ELEVACAO
+  \*------------------------------------ */
+  --zindex-1: 1;
+  --zindex-5: 5;
+  --zindex-10: 10;
+  --zindex-100: 100;
+  --zindex-1000: 1000;
+  --zindex-overlay: 10000;
+
+
+
+
+  /* ------------------------------------*\
+
+    #VARIAVEIS-ANIMACOES
+  \*------------------------------------ */
+  --transition-duration: 0.25s;
+}
+

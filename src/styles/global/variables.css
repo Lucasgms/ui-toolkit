@@ -1,6 +1,6 @@
 :root {
   /* ------------------------------------*\
-    #VARIAVEIS-ESPACAMENTO
+    #SPACING
   \*------------------------------------ */
   --space-xxs: 12px;
   --space-xs: 16px;
@@ -15,7 +15,7 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-BREAKPOINTS
+    #BREAKPOINTS
   \*------------------------------------ */
   --screen-xs: 576px;
   --screen-sm: 768px;
@@ -30,7 +30,7 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-FONT-TYPES
+    #FONTTYPES
   \*------------------------------------ */
   --font-family: 'Lato', 'Roboto', sans-serif;
   --typography-panel-font: 700 48px/58px var(--font-family);
@@ -45,7 +45,7 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-CORES_BASE
+    #BASE-COLORS
   \*------------------------------------ */
   --white: #fff;
   --red: #de2d2d;
@@ -57,8 +57,8 @@
   --medium-blue: #1b53ad;
   --dark-blue: #002868;
   --tech-blue: #04f7f7;
-  --dark-gray: #30455c;
   --dark-tech-blue: #00e0e0;
+  --dark-gray: #30455c;
   --light-gray: #5f748b;
 
 
@@ -66,25 +66,25 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-CORES_APLICACADAS
+    #APLICATION-COLORS
   \*------------------------------------ */
   --primary-color: var(--medium-blue);
   --primary-color-lighten: var(--dark-blue);
   --primary-color-contrast: var(--white);
   --secondary-color: var(--tech-blue);
-  --seconday-color-lighten: var(--dark-tech-blue);
+  --secondary-color-lighten: var(--dark-tech-blue);
   --secondary-color-contrast: var(--dark-blue);
   --info-color: var(--medium-blue);
-  --info-color-lighteen: var(--light-blue);
-  --info-color-constrast: var(--dark-gray);
+  --info-color-lighten: var(--light-blue);
+  --info-color-contrast: var(--dark-gray);
   --success-color: var(--green);
   --success-color-lighten: var(--light-green);
   --success-color-contrast: var(--dark-gray);
   --danger-color: var(--red);
   --danger-color-lighten: var(--light-red);
-  --danger-color-constrast: var(--dark-gray);
+  --danger-color-contrast: var(--dark-gray);
   --warning-color-lighten: var(--light-yellow);
-  --warning-color-constrast: var(--dark-gray);
+  --warning-color-contrast: var(--dark-gray);
   --text-color: var(--dark-gray);
   --text-color-lighten: var(--light-gray);
 
@@ -93,7 +93,7 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-BORDAS
+    #BORDER
   \*------------------------------------ */
   --border-radius: 4px;
 
@@ -102,7 +102,7 @@
 
 
   /* ------------------------------------*\
-    #VARIAVEIS-ELEVACAO
+    #ELEVATION
   \*------------------------------------ */
   --zindex-1: 1;
   --zindex-5: 5;
@@ -116,8 +116,7 @@
 
   /* ------------------------------------*\
 
-    #VARIAVEIS-ANIMACOES
+    #ANIMATION
   \*------------------------------------ */
   --transition-duration: 0.25s;
 }
-

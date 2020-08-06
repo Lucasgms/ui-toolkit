@@ -1,6 +1,25 @@
-import { Meta } from '@storybook/addon-docs/blocks'
+import { Meta, Preview } from '@storybook/addon-docs/blocks'
+import styles from '../../../styles/global/grid.css';
 
 <Meta title="Getting Started|Styles/Grid System" />
+
+## Examples
+
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <div className="c-grid-container">
+    <div class="c-grid-row">
+      <div class="c-grid-col">
+        1 of 2
+      </div>
+      <div class="c-grid-col">
+        2 of 2
+      </div>
+    </div>
+  </div>
+</Preview>
+
 
 # Screens
 

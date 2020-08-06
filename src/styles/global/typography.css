@@ -18,6 +18,11 @@
   letter-spacing: var(--typography-body-letter);
 }
 
+:global(.c-t-body-bold) {
+  font: var(--typography-body-bold-font);
+  letter-spacing: var(--typography-body-bold-letter);
+}
+
 :global(.c-t-body2) {
   font: var(--typography-body2-font);
   letter-spacing: var(--typography-body2-letter);

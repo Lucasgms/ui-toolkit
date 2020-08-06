@@ -32,7 +32,7 @@
   /* ------------------------------------*\
     #FONTTYPES
   \*------------------------------------ */
-  --font-family: 'Lato', 'Roboto', sans-serif;
+  --font-family: 'Lato', sans-serif;
 
   --typography-panel-font: 700 48px/58px var(--font-family);
   --typography-panel-letter: 0;
@@ -45,6 +45,9 @@
 
   --typography-body-font: 400 16px/28px var(--font-family);
   --typography-body-letter: 0;
+
+  --typography-body-bold-font: 700 16px/28px var(--font-family);
+  --typography-body-bold-letter: 0;
 
   --typography-body2-font: 400 14px/28px var(--font-family);
   --typography-body2-letter: 0;

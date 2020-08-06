@@ -1,0 +1,29 @@
+:global(.c-t-panel) {
+  font: var(--typography-panel-font);
+  letter-spacing: var(--typography-panel-letter);
+}
+
+:global(.c-t-title) {
+  font: var(--typography-title-font);
+  letter-spacing: var(--typography-title-letter);
+}
+
+:global(.c-t-subheader) {
+  font: var(--typography-subheader-font);
+  letter-spacing: var(--typography-subheader-letter);
+}
+
+:global(.c-t-body) {
+  font: var(--typography-body-font);
+  letter-spacing: var(--typography-body-letter);
+}
+
+:global(.c-t-body2) {
+  font: var(--typography-body2-font);
+  letter-spacing: var(--typography-body2-letter);
+}
+
+:global(.c-t-button) {
+  font: var(--typography-button-font);
+  letter-spacing: var(--typography-button-letter);
+}

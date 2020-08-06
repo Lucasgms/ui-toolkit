@@ -33,12 +33,25 @@
     #FONTTYPES
   \*------------------------------------ */
   --font-family: 'Lato', 'Roboto', sans-serif;
+
   --typography-panel-font: 700 48px/58px var(--font-family);
+  --typography-panel-letter: 0;
+
   --typography-title-font: 700 36px/43px var(--font-family);
+  --typography-title-letter: 0;
+
   --typography-subheader-font: 700 24px/29px var(--font-family);
+  --typography-subheader-letter: 0;
+
   --typography-body-font: 400 16px/28px var(--font-family);
+  --typography-body-letter: 0;
+
   --typography-body2-font: 400 14px/28px var(--font-family);
+  --typography-body2-letter: 0;
+  
   --typography-button-font: 700 16px/19px var(--font-family);
+  --typography-button-letter: 0;
+
 
 
 

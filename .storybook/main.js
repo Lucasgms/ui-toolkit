@@ -1,6 +1,7 @@
 module.exports = {
   stories: [
-    '../src/**/*.stories.([tj]s|mdx)',
+    '../src/core/**/*.stories.([tj]s|mdx)',
+    '../src/components/**/*.stories.([tj]s|mdx)',
   ],
   addons: [
     'storybook-addon-themes',
@@ -15,20 +16,23 @@ module.exports = {
             [
               '@vue/cli-plugin-babel/preset',
               {
-                jsx: false
-              }
+                jsx: false,
+              },
             ],
           ],
         },
       },
-    }
+    },
   ],
   webpackFinal: async config => {
-    config.module.rules = [{
-      test: /\.md$/,
-      use: ['babel-loader', '@mdx-js/loader'],
-    }, ...config.module.rules.filter(rule => rule.test.source !== '\\.md$')]
+    config.module.rules = [
+      {
+        test: /\.md$/,
+        use: ['babel-loader', '@mdx-js/loader'],
+      },
+      ...config.module.rules.filter(rule => rule.test.source !== '\\.md$'),
+    ];
 
-    return config
+    return config;
   },
-}
+};

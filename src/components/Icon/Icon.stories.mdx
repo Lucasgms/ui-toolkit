@@ -1,0 +1,27 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Icon from './Icon.vue'
+
+<Meta title="Components|Icons" component={Icon} />
+
+# Icon
+
+Icons can be used in many contexts
+
+## Examples
+
+<Preview>
+  <Story name="Default" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Icon },
+      template: `
+        <div class="row-items">
+          <Icon icon="face"></Icon>
+          <Icon icon="done"></Icon>
+          <Icon icon="list"></Icon>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>

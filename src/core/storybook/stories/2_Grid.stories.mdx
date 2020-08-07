@@ -1,46 +1,118 @@
 import { Meta, Preview } from '@storybook/addon-docs/blocks'
-import styles from '../../../styles/global/grid.css';
 
 <Meta title="Getting Started|Styles/Grid System" />
 
+# Grid System
+
+## How it works
+Our grid system is just an extension of Bootstrap's grid system.
+It also uses containers, rows and columns to layout and align responsiveness content.
+You can consult [Bootstrap's grid system documentation](https://getbootstrap.com/docs/4.5/layout/grid/) for further details.
+
+## Options
+
+|                     | Extra small(< 576px )   | Small(>=576px)       | Medium(>= 768px)      | Large(>= 992px)       | Extra large(>=1280px) |
+| ------------------- | ----------------------- | -------------------- | --------------------- | --------------------- | --------------------- |
+| Max container width | None(auto)              | 540px                | 720px                 | 960px                 | 1140px                |   
+| Class prefix        | `.c-col`                | `.c-col-sm`          | `.c-col-md`           | `.c-col-lg`           | `.c-col-xl`           |
+| # of columns        | 12                      | 12                   | 12                    | 12                    | 12                    | 
+| Gutter width        | 30px                    | 30px                 | 30px                  | 30px                  | 30px                  |
+| Nestable            | Yes                     | Yes                  | Yes                   | Yes                   | Yes                   | 
+| Column ordering     | Yes                     | Yes                  | Yes                   | Yes                   | Yes                   |  
+
 ## Examples
+### Equal width
 
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
   <div className="c-grid-container">
     <div class="c-grid-row">
-      <div class="c-grid-col">
-        1 of 2
+      <div class="c-grid-col" style={{
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        1 of 3
       </div>
-      <div class="c-grid-col">
-        2 of 2
+      <div class="c-grid-col" style={{ 
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        2 of 3
+      </div>
+      <div class="c-grid-col" style={{ 
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        3 of 3
       </div>
     </div>
   </div>
 </Preview>
 
+```html
+<div className="c-grid-container">
+  <div class="c-grid-row">
+    <div class="c-grid-col">
+      1 of 3
+    </div>
+    <div class="c-grid-col">
+      2 of 3
+    </div>
+    <div class="c-grid-col">
+      3 of 3
+    </div>
+  </div>
+</div>
+```
 
-# Screens
+### Set one column width
 
-DS Grid System and their CSS Variables.
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <div className="c-grid-container">
+    <div class="c-grid-row">
+      <div class="c-grid-col" style={{
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        1 of 3
+      </div>
+      <div class="c-grid-col-6" style={{ 
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        2 of 3
+      </div>
+      <div class="c-grid-col" style={{ 
+        border: `2px solid var(--info-color)`, 
+        backgroundColor: `var(--info-color-lighten)`,
+        color: `var(--info-color-constrast)`
+      }}>
+        3 of 3
+      </div>
+    </div>
+  </div>
+</Preview>
 
-| Size      | Variable            | Device              |
-| --------- | ------------------- | ------------------- |
-| <  576px  | `var(--screen-xs)`  | Mobile              |
-| >= 768px  | `var(--screen-sm)`  | Tablet              |
-| >= 992px  | `var(--screen-md)`  | Desktop             |
-| >= 1280px | `var(--screen-lg)`  | Large Desktop       |
-| >= 1440px | `var(--screen-xlg)` | Extra Large Desktop |
-
-We also has a variable to define the max size of containers.
-
-| Size   | Variable                      |
-| ------ | ----------------------------- |
-| 1140px | `var(--screen-max-container)` |
-
-And a variable to define the column's gutter width.
-
-| Size | Variable                     |
-| ---- | ---------------------------- |
-| 16px | `var(--screen-gutter-width)` |
+```html
+<div className="c-grid-container">
+  <div class="c-grid-row">
+    <div class="c-grid-col">
+      1 of 3
+    </div>
+    <div class="c-grid-col-6">
+      2 of 3
+    </div>
+    <div class="c-grid-col">
+      3 of 3
+    </div>
+  </div>
+</div>
+```

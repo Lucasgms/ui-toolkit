@@ -1,4 +1,4 @@
 @import "./variables.css";
 @import "./base.css";
 @import "./typography.css";
-@import "./grid.css";
+@import "./grid/index.css";

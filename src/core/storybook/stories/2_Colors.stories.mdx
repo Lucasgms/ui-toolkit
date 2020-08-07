@@ -1,0 +1,111 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
+
+<Meta title="Getting Started|Styles/Colors" />
+
+# Colors
+
+All color palettes and their CSS Variables.
+
+## Contextual colors
+
+This is the contextual colors, is important use it to easily change a theme and maintain a consistent between the projects.
+
+This use 3 kinds of variables:
+
+- `foo-color`: A main state
+- `foo-color-lighten`: For a hover/variantion state, for example
+- `foo-color-contrast`: To using inside a color, as a contrast
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Primary color, used in the most of cases"
+    colors={[
+      'var(--primary-color)',
+      'var(--primary-color-lighten)',
+      'var(--primary-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="Secondary color, used in some cases"
+    colors={[
+      'var(--secondary-color)',
+      'var(--secondary-color-lighten)',
+      'var(--secondary-color-contrast)',
+    ]}
+  />
+   <ColorItem
+    title="Info"
+    subtitle="info color, used for example in neutral/information results"
+    colors={[
+      'var(--info-color)',
+      'var(--info-color-lighten)',
+      'var(--info-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Success"
+    subtitle="Success color, used for example in nice results"
+    colors={[
+      'var(--success-color)',
+      'var(--success-color-lighten)',
+      'var(--success-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Danger"
+    subtitle="Danger color, used for example in errors"
+    colors={[
+      'var(--danger-color)',
+      'var(--danger-color-lighten)',
+      'var(--danger-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Warning"
+    subtitle="Warning color, used for example in warnings"
+    colors={[
+      'var(--warning-color-lighten)',
+      'var(--warning-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Text"
+    subtitle="Used just in text colors"
+    colors={['var(--text-color)', 'var(--text-color-lighten)']}
+  />
+</ColorPalette>
+
+## Color Palette
+
+This is all color palette of project. The variables should to use directly in elements, but to improve the capacity to create theme, is better to use the contextual colors (bellow).
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      'var(--white)',
+      'var(--light-gray)',
+      'var(--dark-gray)',
+    ]}
+  />
+  <ColorItem
+    title="Blue"
+    colors={[
+      'var(--light-blue)',
+      'var(--medium-blue)',
+      'var(--dark-blue)',
+    ]}
+  />
+  <ColorItem
+    title="Tech Blue"
+    colors={[
+      'var(--tech-blue)',
+      'var(--dark-tech-blue)',
+    ]}
+  />
+  <ColorItem title="Green" colors={['var(--light-green)', 'var(--green)']} />
+  <ColorItem title="Red" colors={['var(--light-red)', 'var(--red)']} />
+  <ColorItem title="Yellow" colors={['var(--light-yellow)']} />
+</ColorPalette>

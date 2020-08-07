@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+.markdown-body {
+  background: var(--white);
+  margin: 0 auto;
+  max-width: 980px;
+  min-width: 200px;
+  padding: var(--space) var(--space-lg);
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
+.logo {
+  margin: auto !important;
+  max-width: 655px;
+}
+
+.badges {
+  text-align: center;
+}
+
+.badges img {
+  display: inline-block;
+  margin-right: var(--space-xs) !important;
+}
+
+.row-items > * {
+  margin-bottom: var(--space-sm) !important;
+  margin-right: var(--space-sm) !important;
+}
+
+.sm-offset-left {
+  margin-left: var(--space-sm) !important;
+}
+
+.md-offset-left {
+  margin-left: var(--space-md) !important;
+}
+
+.lg-offset-left {
+  margin-left: var(--space-lg) !important;
+}

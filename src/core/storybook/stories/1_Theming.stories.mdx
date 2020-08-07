@@ -1,4 +1,27 @@
-:root {
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Getting Started|Usage/Theming" />
+
+# Theming
+
+## Webfont
+
+You need to add the `Lato` font, just call it in your `<head>`.
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+  rel="stylesheet"
+  type="text/css"
+/>
+```
+
+## CSS Variables
+
+We use CSS variables to make easy to centralize our Design Tokens, you can see all of them in your stylesheet `:root`:
+
+```css
+ :root {
   /* ------------------------------------*\
     #SPACING
   \*------------------------------------ */
@@ -32,29 +55,13 @@
   /* ------------------------------------*\
     #FONTTYPES
   \*------------------------------------ */
-  --font-family: 'Lato', sans-serif;
-
+  --font-family: 'Lato', 'Roboto', sans-serif;
   --typography-panel-font: 700 48px/58px var(--font-family);
-  --typography-panel-letter: 0;
-
   --typography-title-font: 700 36px/43px var(--font-family);
-  --typography-title-letter: 0;
-
   --typography-subheader-font: 700 24px/29px var(--font-family);
-  --typography-subheader-letter: 0;
-
   --typography-body-font: 400 16px/28px var(--font-family);
-  --typography-body-letter: 0;
-
-  --typography-body-bold-font: 700 16px/28px var(--font-family);
-  --typography-body-bold-letter: 0;
-
   --typography-body2-font: 400 14px/28px var(--font-family);
-  --typography-body2-letter: 0;
-  
   --typography-button-font: 700 16px/19px var(--font-family);
-  --typography-button-letter: 0;
-
 
 
 
@@ -136,3 +143,4 @@
   \*------------------------------------ */
   --transition-duration: 0.25s;
 }
+```

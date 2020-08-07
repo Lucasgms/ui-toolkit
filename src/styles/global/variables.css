@@ -52,7 +52,7 @@
   --typography-body2-font: 400 14px/28px var(--font-family);
   --typography-body2-letter: 0;
   
-  --typography-button-font: 700 16px/19px var(--font-family);
+  --typography-button-font: 700 16px/16px var(--font-family);
   --typography-button-letter: 0;
 
 
@@ -111,7 +111,7 @@
   /* ------------------------------------*\
     #BORDER
   \*------------------------------------ */
-  --border-radius: 4px;
+  --border-radius: 8px;
 
 
 

@@ -1,0 +1,140 @@
+/* ------------------------------------*\
+  #DEFAULT STYLES
+\*------------------------------------ */
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: inline-flex;
+  font: var(--typography-button-font);
+  justify-content: center;
+  letter-spacing: var(--typography-button-letter);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition-duration: var(--transition-duration);
+  transition-property: background-color, border-color;
+  will-change: background-color, border-color;
+}
+
+.button[disabled] {
+  cursor: default;
+}
+
+.button[disabled] {
+  opacity: 0.3;
+}
+
+.children {
+  display: inherit;
+  position: relative;
+}
+
+.startIcon,
+.endIcon {
+  display: inline-block;
+  position: relative;
+}
+
+.startIcon:not(:empty) {
+  margin-right: var(--space-xs);
+}
+
+.endIcon:not(:empty) {
+  margin-left: var(--space-xs);
+}
+
+.isLoading {
+  cursor: default;
+}
+
+.isLoading .children,
+.isLoading .startIcon,
+.isLoading .endIcon {
+  opacity: 0;
+}
+
+
+
+
+
+/* ------------------------------------*\
+  #PRIMARY
+\*------------------------------------ */
+
+.primary.filled {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+}
+
+.primary.filled:not([disabled]):not(.isLoading):hover {
+  background-color: var(--primary-color-lighten);
+}
+
+.primary.outlined {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.primary.outlined:not([disabled]):not(.isLoading):hover {
+  border-color: var(--primary-color-lighten);
+  color: var(--primary-color-lighten);
+}
+
+.primary.text {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.primary.text:not([disabled]):not(.isLoading):hover {
+  color: var(--primary-color-lighten);
+}
+
+
+/* ------------------------------------*\
+  #SECONDARY
+\* ------------------------------------ */
+
+.secondary.filled {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color-contrast);
+}
+
+.secondary.filled:not([disabled]):not(.isLoading):hover {
+  background-color: var(--secondary-color-lighten);
+}
+
+
+
+
+
+/* ------------------------------------*\
+  #SIZES
+\* ------------------------------------ */
+
+.small {
+  padding: var(--space-xs) var(--space);
+}
+
+.small .children {
+  font-size: 0.8em;
+}
+
+.medium {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.medium .children {
+  font-size: 1em;
+}
+
+.large {
+  padding: var(--space-sm) var(--space-xlg);
+}
+
+.large .children {
+  font-size: 1.1em;
+}

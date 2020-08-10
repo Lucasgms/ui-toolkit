@@ -7,14 +7,15 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
+import { IIcon } from '../../core/models';
+
 @Component
 export default class Icon extends Vue {
-  @Prop({ default: '' }) icon!: string;
-  @Prop({ default: '' }) size!: number;
-  @Prop({ default: '' }) variant!: number;
+  @Prop() icon!: IIcon['icon'];
+  @Prop({ default: '' }) color!: IIcon['color'];
 
   get iconClass() {
-    return ['icon', `icon--${this.size}`, `icon--${this.variant}`];
+    return ['icon', `icon--${this.color}`];
   }
 }
 </script>

@@ -9,7 +9,6 @@
 }
 
 .icon {
-  color: var(--text-color);
   direction: ltr;
   display: inline-block;
   font-family: 'Material-Icons';
@@ -74,6 +73,10 @@
 /* ------------------------------------*\
   #VARIANTS
 \*------------------------------------ */
+.icon.icon--default {
+  color: var(--text-color);
+}
+
 .icon.icon--primary {
   color: var(--primary-color);
 }

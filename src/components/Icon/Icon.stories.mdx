@@ -1,0 +1,64 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Icon from './Icon.vue'
+
+<Meta title="Components|Icons" component={Icon} />
+
+# Icon
+
+Icons can be used in many contexts. Icon components accept size and variants props.
+
+## Examples
+Default icons have:
+* Size: default application space variable
+* Color: default application text color
+
+<Preview>
+  <Story name="Default" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Icon },
+      template: `
+        <div class="row-items">
+          <Icon icon="face"></Icon>
+          <Icon icon="done"></Icon>
+          <Icon icon="list"></Icon>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+
+### Variants
+To change the icon's color, variant prop can be:
+* Empty: default text color
+* Primary: default primary color
+* White: default white color
+
+<Preview>
+  <Story name="Variants" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Icon },
+      template: `
+        <div>
+          <div class="row-items">
+            <Icon icon="face"></Icon>
+            <Icon icon="done"></Icon>
+            <Icon icon="list"></Icon>
+          </div>
+          <div class="row-items">
+            <Icon icon="face" color="primary"></Icon>
+            <Icon icon="done" color="primary"></Icon>
+            <Icon icon="list" color="primary"></Icon>
+          </div>
+          <div class="row-items" style='background-color: var(--primary-color)'>
+            <Icon icon="face" color="white"></Icon>
+            <Icon icon="done" color="white"></Icon>
+            <Icon icon="list" color="white"></Icon>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>

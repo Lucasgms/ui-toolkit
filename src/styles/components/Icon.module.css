@@ -1,0 +1,83 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Material-Icons';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Material Icons'),
+    url('../../assets/fonts/Material-Icons/Material-Icons.woff2') format('woff2');
+}
+
+.icon {
+  color: var(--text-color);
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material-Icons';
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  font-size: var(--space);
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+
+
+
+
+/* ------------------------------------*\
+  #SIZES
+\*------------------------------------ */
+
+.icon.icon--xxs {
+  font-size: var(--space-xxs);
+}
+
+.icon.icon--xs {
+  font-size: var(--space-xs);
+}
+
+.icon.icon--sm {
+  font-size: var(--space-sm);
+}
+
+.icon.icon--md {
+  font-size: var(--space-md);
+}
+
+.icon.icon--lg {
+  font-size: var(--space-lg);
+}
+
+.icon.icon--xlg {
+  font-size: var(--space-xlg);
+}
+
+
+
+
+
+/* ------------------------------------*\
+  #VARIANTS
+\*------------------------------------ */
+.icon.icon--primary {
+  color: var(--primary-color);
+}
+
+.icon.icon--white {
+  color: var(--white);
+}

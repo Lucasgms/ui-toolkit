@@ -5,6 +5,7 @@
     :href="href"
     :role="href ? '' : 'button'"
     :aria-busy="isLoading"
+    :disabled="disabled"
     @click="$emit('click')"
   >
     <span class="startIcon">
@@ -21,16 +22,17 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { IButton } from '../../core/models';
 
 @Component
 export default class Button extends Vue {
-  @Prop({ default: 'default' }) color!: string;
-  @Prop({ default: 'filled' }) variant!: string;
-  @Prop({ default: 'round-square' }) shape!: string;
-  @Prop({ default: false }) disabled!: boolean;
-  @Prop() href!: string;
-  @Prop({ default: false }) isLoading!: boolean;
-  @Prop({ default: 'large' }) size!: string;
+  @Prop({ default: 'primary' }) color!: IButton['color'];
+  @Prop({ default: 'filled' }) variant!: IButton['variant'];
+  @Prop({ default: 'round-square' }) shape!: IButton['shape'];
+  @Prop({ default: false }) isLoading!: IButton['isLoading'];
+  @Prop({ default: false }) disabled!: IButton['disabled'];
+  @Prop({ default: 'medium' }) size!: IButton['size'];
+  @Prop() href!: IButton['href'];
 
   get buttonClass() {
     return [
@@ -44,3 +46,5 @@ export default class Button extends Vue {
   }
 }
 </script>
+
+<style src="../../styles/components/Button.module.css" scoped></style>

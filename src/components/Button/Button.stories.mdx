@@ -1,7 +1,8 @@
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
 import { withA11y } from '@storybook/addon-a11y'
-
+  
 import Button from './Button.vue'
+import Icon from '../Icon/Icon.vue'
 
 <Meta title="Components|Buttons" component={Button} />
 
@@ -19,13 +20,109 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
         <div class="row-items">
-          <Button :isLoading="isLoading">Default</Button>
           <Button :isLoading="isLoading" color="primary">Primary</Button>
+          <Button :isLoading="isLoading" color="primary" disabled>Primary Disabled</Button>
           <Button :isLoading="isLoading" color="secondary">Secondary</Button>
-          <Button :isLoading="isLoading" disabled>Disabled</Button>
+          <Button :isLoading="isLoading" color="secondary" disabled>Secondary Disabled</Button>
         </div>
       `,
     }}
   </Story>
 </Preview>
 
+### Outlined buttons
+
+<Preview>
+  <Story name="Outlined" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div class="row-items">
+          <Button :isLoading="isLoading" color="primary" variant="outlined">Primary</Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+### Text buttons
+
+<Preview>
+  <Story name="Text" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div class="row-items">
+          <Button :isLoading="isLoading" color="primary" variant="text">Primary</Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Sizes
+
+### Small Buttons
+<Preview>
+  <Story name="Small" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+          <div class="row-items">
+            <Button :isLoading="isLoading" size="small" color="primary">Primary</Button>
+            <Button :isLoading="isLoading" size="small" color="secondary">Primary</Button>
+            <Button :isLoading="isLoading" variant="outlined" size="small" color="primary">Primary</Button>
+            <Button :isLoading="isLoading" variant="text" size="small" color="primary">Primary</Button>
+          </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+### Large Buttons
+<Preview>
+  <Story name="Large" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+          <div class="row-items">
+            <Button :isLoading="isLoading" size="large" color="primary">Primary</Button>
+            <Button :isLoading="isLoading" size="large" color="secondary">Primary</Button>
+            <Button :isLoading="isLoading" variant="outlined" size="large" color="primary">Primary</Button>
+            <Button :isLoading="isLoading" variant="text" size="large" color="primary">Primary</Button>
+          </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+### With Icons
+<Preview>
+  <Story name="Icons" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Button, Icon },
+      template: `
+          <div class="row-items">
+            <Button :isLoading="isLoading" size="large" color="primary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button :isLoading="isLoading" size="large" color="primary" variant="outlined">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button :isLoading="isLoading" size="large" color="secondary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+          </div>
+      `,
+    }}
+  </Story>
+</Preview>

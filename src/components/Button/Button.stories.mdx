@@ -1,10 +1,10 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Props, Story, Canvas } from '@storybook/addon-docs/blocks'
 import { withA11y } from '@storybook/addon-a11y'
   
 import Button from './Button.vue'
 import Icon from '../Icon/Icon.vue'
 
-<Meta title="Components|Buttons" component={Button} />
+<Meta title="Components/Buttons" component={Button} />
 
 # Button
 
@@ -14,7 +14,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
 
 ### Filled buttons
 
-<Preview>
+<Canvas>
   <Story name="Filled" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
@@ -28,11 +28,11 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 ### Outlined buttons
 
-<Preview>
+<Canvas>
   <Story name="Outlined" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
@@ -43,11 +43,11 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 ### Text buttons
 
-<Preview>
+<Canvas>
   <Story name="Text" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
@@ -58,12 +58,12 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 ## Sizes
 
 ### Small Buttons
-<Preview>
+<Canvas>
   <Story name="Small" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
@@ -77,10 +77,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 ### Large Buttons
-<Preview>
+<Canvas>
   <Story name="Large" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
@@ -94,10 +94,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 ### With Icons
-<Preview>
+<Canvas>
   <Story name="Icons" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button, Icon },
@@ -125,4 +125,4 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       `,
     }}
   </Story>
-</Preview>
+</Canvas>

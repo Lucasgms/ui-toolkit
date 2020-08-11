@@ -1,6 +1,6 @@
-import { Meta, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
 
-<Meta title="Getting Started|Styles/Grid System" />
+<Meta title="Getting Started/Styles/Grid System" />
 
 # Grid System
 
@@ -23,26 +23,26 @@ You can consult [Bootstrap's grid system documentation](https://getbootstrap.com
 ## Examples
 ### Equal width
 
-<Preview style={{
+<Canvas style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
   <div className="c-grid-container">
-    <div class="c-grid-row">
-      <div class="c-grid-col" style={{
+    <div className="c-grid-row">
+      <div className="c-grid-col" style={{
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
       }}>
         1 of 3
       </div>
-      <div class="c-grid-col" style={{ 
+      <div className="c-grid-col" style={{ 
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
       }}>
         2 of 3
       </div>
-      <div class="c-grid-col" style={{ 
+      <div className="c-grid-col" style={{ 
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
@@ -51,10 +51,10 @@ You can consult [Bootstrap's grid system documentation](https://getbootstrap.com
       </div>
     </div>
   </div>
-</Preview>
+</Canvas>
 
 ```html
-<div className="c-grid-container">
+<div class="c-grid-container">
   <div class="c-grid-row">
     <div class="c-grid-col">
       1 of 3
@@ -71,26 +71,26 @@ You can consult [Bootstrap's grid system documentation](https://getbootstrap.com
 
 ### Set one column width
 
-<Preview style={{
+<Canvas style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
   <div className="c-grid-container">
-    <div class="c-grid-row">
-      <div class="c-grid-col" style={{
+    <div className="c-grid-row">
+      <div className="c-grid-col" style={{
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
       }}>
         1 of 3
       </div>
-      <div class="c-grid-col-6" style={{ 
+      <div className="c-grid-col-6" style={{ 
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
       }}>
         2 of 3
       </div>
-      <div class="c-grid-col" style={{ 
+      <div className="c-grid-col" style={{ 
         border: `2px solid var(--info-color)`, 
         backgroundColor: `var(--info-color-lighten)`,
         color: `var(--info-color-constrast)`
@@ -99,10 +99,10 @@ You can consult [Bootstrap's grid system documentation](https://getbootstrap.com
       </div>
     </div>
   </div>
-</Preview>
+</Canvas>
 
 ```html
-<div className="c-grid-container">
+<div class="c-grid-container">
   <div class="c-grid-row">
     <div class="c-grid-col">
       1 of 3

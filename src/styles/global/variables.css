@@ -33,25 +33,18 @@
     #FONTTYPES
   \*------------------------------------ */
   --font-family: 'Lato', sans-serif;
-
   --typography-panel-font: 700 48px/58px var(--font-family);
   --typography-panel-letter: 0;
-
   --typography-title-font: 700 36px/43px var(--font-family);
   --typography-title-letter: 0;
-
   --typography-subheader-font: 700 24px/29px var(--font-family);
   --typography-subheader-letter: 0;
-
   --typography-body-font: 400 16px/28px var(--font-family);
   --typography-body-letter: 0;
-
   --typography-body-bold-font: 700 16px/28px var(--font-family);
   --typography-body-bold-letter: 0;
-
   --typography-body2-font: 400 14px/28px var(--font-family);
   --typography-body2-letter: 0;
-  
   --typography-button-font: 700 16px/16px var(--font-family);
   --typography-button-letter: 0;
 
@@ -64,18 +57,21 @@
     #BASE-COLORS
   \*------------------------------------ */
   --white: #fff;
-  --red: #de2d2d;
+  --dark-gray: #30455c;
+  --light-gray: #5f748b;
+  --red: #de3618;
   --light-red: #ffa7a7;
   --green: #30a64a;
   --light-green: #a7f4c6;
+  --yellow: #ffc641;
   --light-yellow: #ffe2a3;
+  --lightest-blue: #f5f7fb;
   --light-blue: #d9e8f8;
+  --link-blue: #157ffb;
   --medium-blue: #1b53ad;
   --dark-blue: #002868;
   --tech-blue: #04f7f7;
   --dark-tech-blue: #00e0e0;
-  --dark-gray: #30455c;
-  --light-gray: #5f748b;
 
 
 
@@ -84,8 +80,8 @@
   /* ------------------------------------*\
     #APLICATION-COLORS
   \*------------------------------------ */
-  --primary-color: var(--medium-blue);
-  --primary-color-lighten: var(--dark-blue);
+  --primary-color: var(--link-blue);
+  --primary-color-lighten: var(--medium-blue);
   --primary-color-contrast: var(--white);
   --secondary-color: var(--tech-blue);
   --secondary-color-lighten: var(--dark-tech-blue);
@@ -99,6 +95,7 @@
   --danger-color: var(--red);
   --danger-color-lighten: var(--light-red);
   --danger-color-contrast: var(--dark-gray);
+  --warning-color: var(--yellow);
   --warning-color-lighten: var(--light-yellow);
   --warning-color-contrast: var(--dark-gray);
   --text-color: var(--dark-gray);

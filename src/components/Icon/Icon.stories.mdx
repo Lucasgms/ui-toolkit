@@ -1,9 +1,9 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Props, Story, Canvas } from '@storybook/addon-docs/blocks'
 import { withA11y } from '@storybook/addon-a11y'
 
 import Icon from './Icon.vue'
 
-<Meta title="Components|Icons" component={Icon} />
+<Meta title="Components/Icons" component={Icon} />
 
 # Icon
 
@@ -14,12 +14,12 @@ Default icons have:
 * Size: default application space variable
 * Color: default application text color
 
-<Preview>
+<Canvas>
   <Story name="Default" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Icon },
       template: `
-        <div class="row-items">
+        <div className="row-items">
           <Icon icon="face"></Icon>
           <Icon icon="done"></Icon>
           <Icon icon="list"></Icon>
@@ -27,7 +27,7 @@ Default icons have:
       `,
     }}
   </Story>
-</Preview>
+</Canvas>
 
 
 ### Variants
@@ -36,23 +36,23 @@ To change the icon's color, variant prop can be:
 * Primary: default primary color
 * White: default white color
 
-<Preview>
+<Canvas>
   <Story name="Variants" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Icon },
       template: `
         <div>
-          <div class="row-items">
+          <div className="row-items">
             <Icon icon="face"></Icon>
             <Icon icon="done"></Icon>
             <Icon icon="list"></Icon>
           </div>
-          <div class="row-items">
+          <div className="row-items">
             <Icon icon="face" color="primary"></Icon>
             <Icon icon="done" color="primary"></Icon>
             <Icon icon="list" color="primary"></Icon>
           </div>
-          <div class="row-items" style='background-color: var(--primary-color)'>
+          <div className="row-items" style='background-color: var(--primary-color)'>
             <Icon icon="face" color="white"></Icon>
             <Icon icon="done" color="white"></Icon>
             <Icon icon="list" color="white"></Icon>
@@ -61,4 +61,4 @@ To change the icon's color, variant prop can be:
       `,
     }}
   </Story>
-</Preview>
+</Canvas>

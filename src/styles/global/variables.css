@@ -80,6 +80,9 @@
   /* ------------------------------------*\
     #APLICATION-COLORS
   \*------------------------------------ */
+  --default-color: var(--light-gray);
+  --default-color-lighten: var(--dark-gray);
+  --default-color-contrast: var(--white);
   --primary-color: var(--link-blue);
   --primary-color-lighten: var(--medium-blue);
   --primary-color-contrast: var(--white);

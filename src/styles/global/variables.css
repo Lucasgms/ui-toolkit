@@ -2,13 +2,13 @@
   /* ------------------------------------*\
     #SPACING
   \*------------------------------------ */
-  --space-xxs: 12px;
-  --space-xs: 16px;
-  --space-sm: 20px;
-  --space: 24px;
-  --space-md: 32px;
-  --space-lg: 40px;
-  --space-xlg: 48px;
+  --space-xxs: 0.75rem;
+  --space-xs: 1rem;
+  --space-sm: 1.25rem;
+  --space: 1.5rem;
+  --space-md: 2rem;
+  --space-lg: 2.5rem;
+  --space-xlg: 3rem;
 
 
 

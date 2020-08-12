@@ -19,27 +19,29 @@ The typography used and their CSS Variables.
 | -------------------- | ----------------------------- |
 | `var(--font-family)` | 'Lato', 'Roboto', sans-serif' |
 
-| Variable                         | Font size | Line height | Font weight |
-|----------------------------------|-----------|-------------|-------------|
-| var(--typography-panel-font)     | 48px      | 58px        | 700         |
-| var(--typography-title-font)     | 36px      | 43px        | 700         |
-| var(--typography-subheader-font) | 24px      | 29px        | 700         |
-| var(--typography-body-font)      | 16px      | 19px        | 400         |
-| var(--typography-body2-font)     | 16px      | 28px        | 400         |
-| var(--typography-caption-font)   | 14px      | 28px        | 400         |
-| var(--typography-button-font)    | 16px      | 19px        | 700         |
+| Variable                          | Font size     | Line height   | Font weight |
+|-----------------------------------|---------------|---------------|-------------|
+| var(--typography-panel-font)      | 3em(48px)     | 3.6em(~=58px) | 700         |
+| var(--typography-title-font)      | 2.25em(36px)  | 2.7em(~=43px) | 700         |
+| var(--typography-subheader-font)  | 1.5em(24px)   | 1.8em(~=29px) | 700         |
+| var(--typography-body-font)       | 1em(16px)     | 1.5(24px)     | 400         |
+| var(--typography-body-bold-font)  | 1em(16px)     | 1.5(24px)     | 400         |
+| var(--typography-body2-font)      | 0.875em(14px) | 1.5(21px)     | 400         |
+| var(--typography-button-font)     | 1em(16px)     | 1.25em(20px)  | 700         |
+| var(--typography-form-label-font) | 1em(16px)     | 1.25em(20px)  | 700         |
 
 ### Class values
 
-| Typography           | Value               |
-| -------------------- | ------------------- |
-| Panel                | `c-t-panel`         |
-| Title                | `c-t-title`         |
-| Subheader            | `c-t-subheader`     |
-| Body                 | `c-t-body`          |
-| Body Bold            | `c-t-body-bold`     |
-| Body2                | `c-t-body2`         |
-| Button               | `c-t-button`        |
+| Typography | Value            |
+|------------| -----------------|
+| Panel      | `c-t-panel`      |
+| Title      | `c-t-title`      |
+| Subheader  | `c-t-subheader`  |
+| Body       | `c-t-body`       |
+| Body Bold  | `c-t-body-bold`  |
+| Body2      | `c-t-body2`      |
+| Button     | `c-t-button`     |
+| Form Label | `c-t-form-label` |
 
 We have variables to font and letter spacing, you just need to use on `font` and `letter-spacing` property. You can just use a class to add a typography styles too.
 
@@ -208,5 +210,26 @@ foo {
 foo {
   font: var(--typography-button-font);
   letter-spacing: var(--typography-button-letter);
+}
+```
+
+<Canvas style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <div style={{
+    font: `var(--typography-form-label-font)`,
+    letterSpacing: `var(--typography-form-label-letter)`
+  }}>Form label</div>
+</Canvas>
+
+
+```html
+<label class="c-t-form-label">Form label</label>
+```
+
+```css
+foo {
+  font: var(--typography-form-label-font);
+  letter-spacing: var(--typography-form-label-letter);
 }
 ```

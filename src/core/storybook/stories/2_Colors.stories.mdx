@@ -13,10 +13,19 @@ This is the contextual colors, is important use it to easily change a theme and 
 This use 3 kinds of variables:
 
 - `foo-color`: A main state
-- `foo-color-lighten`: For a hover/variantion state, for example
+- `foo-color-lighten`: For a hover/variation state, for example
 - `foo-color-contrast`: To using inside a color, as a contrast
 
 <ColorPalette>
+  <ColorItem
+    title="Default"
+    subtitle="Neutral color"
+    colors={[
+      'var(--default-color)',
+      'var(--default-color-lighten)',
+      'var(--default-color-contrast)',
+    ]}
+  />
   <ColorItem
     title="Primary"
     subtitle="Primary color, used in the most of cases"
@@ -66,6 +75,7 @@ This use 3 kinds of variables:
     title="Warning"
     subtitle="Warning color, used for example in warnings"
     colors={[
+      'var(--warning-color)',
       'var(--warning-color-lighten)',
       'var(--warning-color-contrast)',
     ]}
@@ -93,7 +103,9 @@ This is all color palette of project. The variables should to use directly in el
   <ColorItem
     title="Blue"
     colors={[
+      'var(--lightest-blue)',
       'var(--light-blue)',
+      'var(--link-blue)',
       'var(--medium-blue)',
       'var(--dark-blue)',
     ]}
@@ -107,5 +119,5 @@ This is all color palette of project. The variables should to use directly in el
   />
   <ColorItem title="Green" colors={['var(--light-green)', 'var(--green)']} />
   <ColorItem title="Red" colors={['var(--light-red)', 'var(--red)']} />
-  <ColorItem title="Yellow" colors={['var(--light-yellow)']} />
+  <ColorItem title="Yellow" colors={['var(--light-yellow)', 'var(--yellow)']} />
 </ColorPalette>

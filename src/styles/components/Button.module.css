@@ -22,9 +22,6 @@
 
 .button[disabled] {
   cursor: default;
-}
-
-.button[disabled] {
   opacity: 0.3;
 }
 
@@ -47,16 +44,6 @@
   margin-left: var(--space-xs);
 }
 
-.isLoading {
-  cursor: default;
-}
-
-.isLoading .children,
-.isLoading .startIcon,
-.isLoading .endIcon {
-  opacity: 0;
-}
-
 
 
 
@@ -70,27 +57,26 @@
   color: var(--primary-color-contrast);
 }
 
-.primary.filled:not([disabled]):not(.isLoading):hover {
+.primary.filled:not([disabled]):hover {
   background-color: var(--primary-color-lighten);
 }
 
 .primary.outlined {
-  border-color: var(--primary-color);
+  border-color: var(--primary-color-neutral);
   color: var(--primary-color);
 }
 
-.primary.outlined:not([disabled]):not(.isLoading):hover {
-  border-color: var(--primary-color-lighten);
+.primary.outlined:not([disabled]):hover {
   color: var(--primary-color-lighten);
 }
 
 .primary.text {
   color: var(--primary-color);
-  text-decoration: underline;
 }
 
-.primary.text:not([disabled]):not(.isLoading):hover {
+.primary.text:not([disabled]):hover {
   color: var(--primary-color-lighten);
+  text-decoration: underline;
 }
 
 
@@ -103,7 +89,7 @@
   color: var(--secondary-color-contrast);
 }
 
-.secondary.filled:not([disabled]):not(.isLoading):hover {
+.secondary.filled:not([disabled]):hover {
   background-color: var(--secondary-color-lighten);
 }
 
@@ -120,7 +106,8 @@
 }
 
 .small .children {
-  font-size: 0.8em;
+  font-size: 0.875em;
+  line-height: var(--space-xs);
 }
 
 .medium {
@@ -129,6 +116,7 @@
 
 .medium .children {
   font-size: 1em;
+  line-height: var(--space-sm);
 }
 
 .large {
@@ -136,5 +124,6 @@
 }
 
 .large .children {
-  font-size: 1.1em;
+  font-size: 1.125em;
+  line-height: var(--space);
 }

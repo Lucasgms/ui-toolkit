@@ -33,20 +33,22 @@
     #FONTTYPES
   \*------------------------------------ */
   --font-family: 'Lato', sans-serif;
-  --typography-panel-font: 700 48px/58px var(--font-family);
+  --typography-panel-font: 700 3em/3.6em var(--font-family);
   --typography-panel-letter: 0;
-  --typography-title-font: 700 36px/43px var(--font-family);
+  --typography-title-font: 700 2.25em/2.7em var(--font-family);
   --typography-title-letter: 0;
-  --typography-subheader-font: 700 24px/29px var(--font-family);
+  --typography-subheader-font: 700 1.5em/1.8em var(--font-family);
   --typography-subheader-letter: 0;
-  --typography-body-font: 400 16px/28px var(--font-family);
+  --typography-body-font: 400 1em/1.5em var(--font-family);
   --typography-body-letter: 0;
-  --typography-body-bold-font: 700 16px/28px var(--font-family);
+  --typography-body-bold-font: 700 1em/1.5 var(--font-family);
   --typography-body-bold-letter: 0;
-  --typography-body2-font: 400 14px/28px var(--font-family);
+  --typography-body2-font: 400 0.875em/1.5 var(--font-family);
   --typography-body2-letter: 0;
-  --typography-button-font: 700 16px/16px var(--font-family);
+  --typography-button-font: 700 1em/1.25em var(--font-family);
   --typography-button-letter: 0;
+  --typography-form-label-font: 700 1em/1.25em var(--font-family);
+  --typography-form-label-letter: 0;
 
 
 

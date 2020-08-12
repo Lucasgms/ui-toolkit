@@ -32,3 +32,8 @@
   font: var(--typography-button-font);
   letter-spacing: var(--typography-button-letter);
 }
+
+:global(.c-t-form-label) {
+  font: var(--typography-form-label-font);
+  letter-spacing: var(--typography-form-label-letter);
+}

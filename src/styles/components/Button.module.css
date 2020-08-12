@@ -105,25 +105,40 @@
   padding: var(--space-xs) var(--space);
 }
 
+.small .startIcon > .icon,
+.small .endIcon > .icon {
+  font-size: 1em;
+}
+
 .small .children {
   font-size: 0.875em;
-  line-height: var(--space-xs);
+  line-height: 1em;
 }
 
 .medium {
   padding: var(--space-sm) var(--space-md);
 }
 
+.medium .startIcon > .icon,
+.medium .endIcon > .icon {
+  font-size: 1.25em;
+}
+
 .medium .children {
   font-size: 1em;
-  line-height: var(--space-sm);
+  line-height: 1.25em;
 }
 
 .large {
   padding: var(--space-sm) var(--space-xlg);
 }
 
+.large .startIcon > .icon,
+.large .endIcon > .icon {
+  font-size: 1.25em;
+}
+
 .large .children {
   font-size: 1.125em;
-  line-height: var(--space);
+  line-height: 1.25em;
 }

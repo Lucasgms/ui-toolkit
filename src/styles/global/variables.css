@@ -54,7 +54,6 @@
 
 
 
-
   /* ------------------------------------*\
     #BASE-COLORS
   \*------------------------------------ */
@@ -88,6 +87,7 @@
   --primary-color: var(--link-blue);
   --primary-color-lighten: var(--medium-blue);
   --primary-color-contrast: var(--white);
+  --primary-color-neutral: var(--light-blue);
   --secondary-color: var(--tech-blue);
   --secondary-color-lighten: var(--dark-tech-blue);
   --secondary-color-contrast: var(--dark-blue);
@@ -129,6 +129,9 @@
   --zindex-1000: 1000;
   --zindex-overlay: 10000;
   --shadow-1: 2px 1px 6px #d0ddea;
+
+
+
 
 
   /* ------------------------------------*\

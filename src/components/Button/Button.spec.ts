@@ -26,7 +26,6 @@ const renderComponent = (overrides?: ComponentOptions) => {
 
     const props = Object.assign({
         title: "Some text for title",
-        isLoading: false
     }, overrides?.props || {});
 
     return render(Button, {

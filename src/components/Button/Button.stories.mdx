@@ -20,10 +20,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
         <div class="row-items">
-          <Button :isLoading="isLoading" color="primary">Primary</Button>
-          <Button :isLoading="isLoading" color="primary" disabled>Primary Disabled</Button>
-          <Button :isLoading="isLoading" color="secondary">Secondary</Button>
-          <Button :isLoading="isLoading" color="secondary" disabled>Secondary Disabled</Button>
+          <Button color="primary">Primary</Button>
+          <Button color="primary" disabled>Primary Disabled</Button>
+          <Button color="secondary">Secondary</Button>
+          <Button color="secondary" disabled>Secondary Disabled</Button>
         </div>
       `,
     }}
@@ -38,7 +38,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
         <div class="row-items">
-          <Button :isLoading="isLoading" color="primary" variant="outlined">Primary</Button>
+          <Button color="primary" variant="outlined">Primary</Button>
         </div>
       `,
     }}
@@ -53,7 +53,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
         <div class="row-items">
-          <Button :isLoading="isLoading" color="primary" variant="text">Primary</Button>
+          <Button color="primary" variant="text">Primary</Button>
         </div>
       `,
     }}
@@ -69,10 +69,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
           <div class="row-items">
-            <Button :isLoading="isLoading" size="small" color="primary">Primary</Button>
-            <Button :isLoading="isLoading" size="small" color="secondary">Primary</Button>
-            <Button :isLoading="isLoading" variant="outlined" size="small" color="primary">Primary</Button>
-            <Button :isLoading="isLoading" variant="text" size="small" color="primary">Primary</Button>
+            <Button size="small" color="primary">Primary</Button>
+            <Button size="small" color="secondary">Primary</Button>
+            <Button variant="outlined" size="small" color="primary">Primary</Button>
+            <Button variant="text" size="small" color="primary">Primary</Button>
           </div>
       `,
     }}
@@ -86,10 +86,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
       components: { Button },
       template: `
           <div class="row-items">
-            <Button :isLoading="isLoading" size="large" color="primary">Primary</Button>
-            <Button :isLoading="isLoading" size="large" color="secondary">Primary</Button>
-            <Button :isLoading="isLoading" variant="outlined" size="large" color="primary">Primary</Button>
-            <Button :isLoading="isLoading" variant="text" size="large" color="primary">Primary</Button>
+            <Button size="large" color="primary">Primary</Button>
+            <Button size="large" color="secondary">Primary</Button>
+            <Button variant="outlined" size="large" color="primary">Primary</Button>
+            <Button variant="text" size="large" color="primary">Primary</Button>
           </div>
       `,
     }}
@@ -102,26 +102,68 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
     {{
       components: { Button, Icon },
       template: `
+        <div>
           <div class="row-items">
-            <Button :isLoading="isLoading" size="large" color="primary">
+            <Button size="small" color="primary">
               <template v-slot:startIcon>
                 <Icon icon="backup"/>
               </template>
               With Icon
             </Button>
-            <Button :isLoading="isLoading" size="large" color="primary" variant="outlined">
+            <Button size="small" color="primary" variant="outlined">
               <template v-slot:startIcon>
                 <Icon icon="backup"/>
               </template>
               With Icon
             </Button>
-            <Button :isLoading="isLoading" size="large" color="secondary">
+            <Button size="small" color="secondary">
               <template v-slot:startIcon>
                 <Icon icon="backup"/>
               </template>
               With Icon
             </Button>
           </div>
+          <div class="row-items">
+            <Button color="primary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button color="primary" variant="outlined">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button color="secondary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+          </div>
+          <div class="row-items">
+            <Button size="large" color="primary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button size="large" color="primary" variant="outlined">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+            <Button size="large" color="secondary">
+              <template v-slot:startIcon>
+                <Icon icon="backup"/>
+              </template>
+              With Icon
+            </Button>
+          </div>
+        </div>
       `,
     }}
   </Story>

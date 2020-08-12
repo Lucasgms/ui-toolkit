@@ -4,7 +4,6 @@
     :class="buttonClass"
     :href="href"
     :role="href ? '' : 'button'"
-    :aria-busy="isLoading"
     :disabled="disabled"
     @click="$emit('click')"
   >
@@ -28,21 +27,12 @@ import { IButton } from '../../core/models';
 export default class Button extends Vue {
   @Prop({ default: 'primary' }) color!: IButton['color'];
   @Prop({ default: 'filled' }) variant!: IButton['variant'];
-  @Prop({ default: 'round-square' }) shape!: IButton['shape'];
-  @Prop({ default: false }) isLoading!: IButton['isLoading'];
   @Prop({ default: false }) disabled!: IButton['disabled'];
   @Prop({ default: 'medium' }) size!: IButton['size'];
   @Prop() href!: IButton['href'];
 
   get buttonClass() {
-    return [
-      'button',
-      this.color,
-      this.variant,
-      this.shape,
-      this.size,
-      this.isLoading ? 'isLoading' : '',
-    ];
+    return ['button', this.color, this.variant, this.size];
   }
 }
 </script>

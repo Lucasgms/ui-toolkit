@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs/blocks'
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
 
 <Meta title="Getting Started/Styles/Miscellaneous" />
 
@@ -31,3 +31,19 @@ All `z-index` variables to maintain consistency.
 | 100   | `var(--zindex-100)`     |
 | 1000  | `var(--zindex-1000)`    |
 | 10000 | `var(--zindex-overlay)` |
+
+## Box Shadow
+
+All `box-shadow` variables to maintain consistency.
+
+| value | Variable          |
+| ----- | ----------------- |
+| 1     | `var(--shadow-1)` |
+
+<Canvas style={{
+  padding: `var(--space-xs) var(--space-sm)`,
+  boxShadow: `var(--shadow-1)`
+}}>
+  Shadow 1
+</Canvas>
+

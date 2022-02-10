@@ -46,7 +46,7 @@
     "jest-watch-typeahead": "^0.6.0",
     "lint-staged": "^10.2.11",
     "loki": "^0.24.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.0.5",
     "sass-loader": "^9.0.2",
     "storybook-addon-themes": "^5.4.1",
